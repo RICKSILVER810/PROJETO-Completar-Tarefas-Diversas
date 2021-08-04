@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica;
+	background-image: linear-gradient(to right, #E65763, #340730);
+	color: #FFF;
+	text-align: center;
+	padding-top: 30px;
+}
+
+#container{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*formulário da página*/
+
+#header{
+	margin-top: 40px;
+}
+
+#form{
+	position: relative;
+}
+
+#form input:focus{           /*para tirar o foco ao passar o mouse*/
+	outline: none
+}
+
+#title{
+	box-sizing: border-box;
+	border: 1px solid #340730;
+	background: #FFF;
+	color: #340730;
+	padding: 15px;
+	font-size: 18px;
+	width: 100%;
+}
+
+
+
+#form input::placeholder{    /*placeholder são dois pontos*/
+	color: #340730;
+}
+
+#btn{
+	position: absolute;
+	color: #FFF;
+	border: 1px solid #340730;
+	cursor: pointer;
+	transition: .5s;
+	width: 60px;
+	height: 59px;
+	top: 0;
+	right: 0;
+}
+
+#btn:hover{
+	background-color: #340730;
+	color: #FFF;
+
+}
+ 
+ #icon{
+ 	font-size: 20px;
+ }
+
+ #list{
+ 	list-style: none;
+ 	padding-left: 0;
+ }
+
+ #list li{
+ 	text-align: left;
+ 	height: 50px;
+ 	line-height: 50px;
+ 	position: relative;
+ 	border-bottom: 3px solid #340730;
+ 	background-color: #FFF;
+ 	color: #340730;
+ 	margin-bottom: 10px;
+ 	padding-left: 15px;
+ 	transition: .5s;
+ 	font-weight: bold;
+
+ }
+
+ #list i{
+ 	position: absolute;
+ 	top: 0;
+ 	height: 47px;
+ 	transition: .5s;
+ 	cursor: pointer;
+ 	width: 40px;
+ 	padding: 13px 13px;
+ }
+
+ #done-btn{
+ 	right: 40px;
+
+ }
+ #done-btn:hover{
+ 	color: #FFF;
+ 	background-color: #09E01B;
+ }
+
+ #remove-btn{
+ 	right: 0;
+ }
+
+ #remove-btn:hover{
+ 	color: #FFF;
+ 	background-color: #EB0927;
+ 	margin-left: 0px;
+ }
+
+ #list li span{
+ 	font-size: 18px;
+ }
+
+
+
+ .hide{
+ 	display: none;   /*Para fazer aparecer quando passarmos o mouse.*/
+ }                   /*Faremos quando formos aplicar o javaScript*/
+
+
+#list li.done{
+     background-color: #34073D;
+     color: #FFF;
+     text-decoration: line-through;  /*Faremos quando formos aplicar o javaScript*/
+                                     /*Teremos um estilo diferente*/
+
+}
